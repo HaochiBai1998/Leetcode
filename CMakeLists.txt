@@ -3,4 +3,4 @@ project(Leetcode)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Leetcode main.cpp 76.\ Minimum\ Window\ Substring.cpp)
+add_executable(Leetcode test.cpp)

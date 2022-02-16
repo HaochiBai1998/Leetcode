@@ -10,28 +10,24 @@ using namespace std;
 
 class Solution {
     vector<int> path;
-    vector<int> nums;
     vector<vector<int>> ans;
     int n;
 public:
-    void dfs(int prev,int rmn){
-        if(rmn==0){
-            ans.push_back(path);
+    void dfs(int index,vector<int>& nums){
+        ans.push_back(path);
+        if(index==n){
             return;
         }
-        for(int i=prev+1;i<n-rmn;++i){
+        for(int i=index;i<n;++i){
             path.push_back(nums[i]);
-            dfs(i,rmn-1);
+            dfs(i+1,nums);
             path.pop_back();
         }
     }
     vector<vector<int>> subsets(vector<int>& nums) {
-        this->nums=nums;
         n=nums.size();
-        vector<vector<int>> ans;
-        for(int i=0;i<n;++i){
-            dfs(-1,i);
-            path.clear();
-        }
+        dfs(0,nums);
+        return ans;
     }
+};
 };

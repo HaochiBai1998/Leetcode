@@ -8,43 +8,53 @@
 #include<math.h>
 #include<unordered_set>
 using namespace std;
-
 class Solution {
     int n;
-    string IP;
-    int IPSize;
-public: 
-    //dfs+ backtracking
-    void dfs(vector<string> & ans,string & s,int index){
-        if(index>=n||IPSize==4){
-            if(index>=n&&IPSize==4)
-                ans.push_back(IP);
+    string ip;
+    vector<string> ans;
+    string s;
+public:
+    bool isValidIP(int head,int tail){
+        int ipSize=tail-head+1;
+        if(ipSize>3){
+            return false;
+        }
+        if(ipSize!=1&&s[head]=='0'){
+            return false;
+        }
+        int num=stoi(s.substr(head,ipSize));
+        if(num>255||num<0){
+            return false;
+        }
+        return true;
+    }
+    void dfs(int index,int counter){
+        int rmn=n-index;
+        if(counter==4||index==n){
+            if(counter==4&&index==n){
+                ans.push_back(ip);
+            }
+        }
+        if(rmn>(4-counter)*3){
             return;
         }
-        for(int i=1;i<4;++i){
-            if(i+index>n){
-                continue;
+
+        string original_ip=ip;
+        for(int i=index;i<index+3;++i){
+            if(i>=n){
+                break;
             }
-            string str=s.substr(index,i);
-            int num=stoi(str);
-            if(num<=255&&num>=0){
-                string tmp=IP;
-                if(to_string(num)!=str){
-                    continue;
-                }
-                IP=IP+(IP==""?"":".")+str;
-                ++IPSize;
-                dfs(ans,s,index+i);
-                IP=tmp;
-                --IPSize;
+            if(isValidIP(index,i)){
+                ip+=(!ip.size()?"":".")+s.substr(index,i-index+1);
+                dfs(i+1,counter+1);
+                ip=original_ip;
             }
         }
     }
     vector<string> restoreIpAddresses(string s) {
-        vector<string> ans;
+        this->s=s;
         n=s.size();
-        IPSize=0;
-        dfs(ans,s,0);
+        dfs(0,0);
         return ans;
     }
 };

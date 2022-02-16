@@ -72,14 +72,8 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 
 build cmake_object_order_depends_target_Leetcode: phony || CMakeFiles/Leetcode.dir
 
-build CMakeFiles/Leetcode.dir/main.cpp.o: CXX_COMPILER__Leetcode_Debug /Users/bhc/CLionProjects/Leetcode/main.cpp || cmake_object_order_depends_target_Leetcode
-  DEP_FILE = CMakeFiles/Leetcode.dir/main.cpp.o.d
-  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -std=gnu++14
-  OBJECT_DIR = CMakeFiles/Leetcode.dir
-  OBJECT_FILE_DIR = CMakeFiles/Leetcode.dir
-
-build CMakeFiles/Leetcode.dir/76._Minimum_Window_Substring.cpp.o: CXX_COMPILER__Leetcode_Debug /Users/bhc/CLionProjects/Leetcode/76.$ Minimum$ Window$ Substring.cpp || cmake_object_order_depends_target_Leetcode
-  DEP_FILE = CMakeFiles/Leetcode.dir/76._Minimum_Window_Substring.cpp.o.d
+build CMakeFiles/Leetcode.dir/test.cpp.o: CXX_COMPILER__Leetcode_Debug /Users/bhc/CLionProjects/Leetcode/test.cpp || cmake_object_order_depends_target_Leetcode
+  DEP_FILE = CMakeFiles/Leetcode.dir/test.cpp.o.d
   FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -std=gnu++14
   OBJECT_DIR = CMakeFiles/Leetcode.dir
   OBJECT_FILE_DIR = CMakeFiles/Leetcode.dir
@@ -92,7 +86,7 @@ build CMakeFiles/Leetcode.dir/76._Minimum_Window_Substring.cpp.o: CXX_COMPILER__
 #############################################
 # Link the executable Leetcode
 
-build Leetcode: CXX_EXECUTABLE_LINKER__Leetcode_Debug CMakeFiles/Leetcode.dir/main.cpp.o CMakeFiles/Leetcode.dir/76._Minimum_Window_Substring.cpp.o
+build Leetcode: CXX_EXECUTABLE_LINKER__Leetcode_Debug CMakeFiles/Leetcode.dir/test.cpp.o
   FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk
   OBJECT_DIR = CMakeFiles/Leetcode.dir
   POST_BUILD = :

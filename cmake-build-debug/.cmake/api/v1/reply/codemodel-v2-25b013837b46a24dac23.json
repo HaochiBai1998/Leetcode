@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/Users/bhc/CLionProjects/Leetcode/cmake-build-debug",
-		"source" : "/Users/bhc/CLionProjects/Leetcode"
+		"build" : "/Users/bhc/Desktop/Leetcode/cmake-build-debug",
+		"source" : "/Users/bhc/Desktop/Leetcode"
 	},
 	"version" : 
 	{

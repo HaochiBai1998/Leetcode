@@ -2,16 +2,9 @@
 #include<vector>
 #include<iostream>
 #include<algorithm>
-#include<map>
-#include<stack>
-#include<math.h>
-#include<unordered_set>
-#include<queue>
-#include<list>
+#include<unordered_map>
 using namespace std;
 class LRUCache {
-public:
-    //my Own DLL class
     class DLL{
     public:
         int key;
@@ -23,6 +16,9 @@ public:
     };
     DLL * head;
     DLL * tail;
+public:
+    //my Own DLL class
+
     unordered_map<int,DLL*> hashTable;
     int capacity;
 

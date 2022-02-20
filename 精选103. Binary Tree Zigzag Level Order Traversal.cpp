@@ -1,3 +1,7 @@
+//
+// Created by bhc on 2022/2/18.
+//
+
 
 #include<utility>
 #include<vector>
@@ -33,7 +37,7 @@ public:
         while(!nodes.empty()){
             int n=nodes.size();
             deque<int> nums;
-            for(int i=0;i<n;++i){        
+            for(int i=0;i<n;++i){
                 TreeNode * node=nodes.front();
                 nodes.pop();
                 if(!direction){
@@ -44,14 +48,14 @@ public:
                 }
                 if(node->left){
                     nodes.push(node->left);
-                } 
+                }
                 if(node->right){
                     nodes.push(node->right);
                 }
-            }   
+            }
             ans.emplace_back(vector<int>{nums.begin(),nums.end()});
             direction=!direction;
-        }        
+        }
     }
     vector<vector<int>> zigzagLevelOrder(TreeNode* root) {
         vector<vector<int>> ans;

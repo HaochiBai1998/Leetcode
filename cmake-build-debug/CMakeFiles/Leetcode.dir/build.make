@@ -69,28 +69,28 @@ include CMakeFiles/Leetcode.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Leetcode.dir/flags.make
 
-CMakeFiles/Leetcode.dir/test.cpp.o: CMakeFiles/Leetcode.dir/flags.make
-CMakeFiles/Leetcode.dir/test.cpp.o: ../test.cpp
-CMakeFiles/Leetcode.dir/test.cpp.o: CMakeFiles/Leetcode.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bhc/Desktop/Leetcode/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Leetcode.dir/test.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Leetcode.dir/test.cpp.o -MF CMakeFiles/Leetcode.dir/test.cpp.o.d -o CMakeFiles/Leetcode.dir/test.cpp.o -c /Users/bhc/Desktop/Leetcode/test.cpp
+CMakeFiles/Leetcode.dir/111.cpp.o: CMakeFiles/Leetcode.dir/flags.make
+CMakeFiles/Leetcode.dir/111.cpp.o: ../111.cpp
+CMakeFiles/Leetcode.dir/111.cpp.o: CMakeFiles/Leetcode.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bhc/Desktop/Leetcode/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Leetcode.dir/111.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Leetcode.dir/111.cpp.o -MF CMakeFiles/Leetcode.dir/111.cpp.o.d -o CMakeFiles/Leetcode.dir/111.cpp.o -c /Users/bhc/Desktop/Leetcode/111.cpp
 
-CMakeFiles/Leetcode.dir/test.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Leetcode.dir/test.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/bhc/Desktop/Leetcode/test.cpp > CMakeFiles/Leetcode.dir/test.cpp.i
+CMakeFiles/Leetcode.dir/111.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Leetcode.dir/111.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/bhc/Desktop/Leetcode/111.cpp > CMakeFiles/Leetcode.dir/111.cpp.i
 
-CMakeFiles/Leetcode.dir/test.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Leetcode.dir/test.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/bhc/Desktop/Leetcode/test.cpp -o CMakeFiles/Leetcode.dir/test.cpp.s
+CMakeFiles/Leetcode.dir/111.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Leetcode.dir/111.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/bhc/Desktop/Leetcode/111.cpp -o CMakeFiles/Leetcode.dir/111.cpp.s
 
 # Object files for target Leetcode
 Leetcode_OBJECTS = \
-"CMakeFiles/Leetcode.dir/test.cpp.o"
+"CMakeFiles/Leetcode.dir/111.cpp.o"
 
 # External object files for target Leetcode
 Leetcode_EXTERNAL_OBJECTS =
 
-Leetcode: CMakeFiles/Leetcode.dir/test.cpp.o
+Leetcode: CMakeFiles/Leetcode.dir/111.cpp.o
 Leetcode: CMakeFiles/Leetcode.dir/build.make
 Leetcode: CMakeFiles/Leetcode.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/bhc/Desktop/Leetcode/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Leetcode"

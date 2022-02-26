@@ -129,29 +129,29 @@ Leetcode/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Leetcode.dir/build.make CMakeFiles/Leetcode.dir/build
 .PHONY : Leetcode/fast
 
-111.o: 111.cpp.o
-.PHONY : 111.o
+test.o: test.cpp.o
+.PHONY : test.o
 
 # target to build an object file
-111.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Leetcode.dir/build.make CMakeFiles/Leetcode.dir/111.cpp.o
-.PHONY : 111.cpp.o
+test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Leetcode.dir/build.make CMakeFiles/Leetcode.dir/test.cpp.o
+.PHONY : test.cpp.o
 
-111.i: 111.cpp.i
-.PHONY : 111.i
+test.i: test.cpp.i
+.PHONY : test.i
 
 # target to preprocess a source file
-111.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Leetcode.dir/build.make CMakeFiles/Leetcode.dir/111.cpp.i
-.PHONY : 111.cpp.i
+test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Leetcode.dir/build.make CMakeFiles/Leetcode.dir/test.cpp.i
+.PHONY : test.cpp.i
 
-111.s: 111.cpp.s
-.PHONY : 111.s
+test.s: test.cpp.s
+.PHONY : test.s
 
 # target to generate assembly for a file
-111.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Leetcode.dir/build.make CMakeFiles/Leetcode.dir/111.cpp.s
-.PHONY : 111.cpp.s
+test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Leetcode.dir/build.make CMakeFiles/Leetcode.dir/test.cpp.s
+.PHONY : test.cpp.s
 
 # Help Target
 help:
@@ -162,9 +162,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Leetcode"
-	@echo "... 111.o"
-	@echo "... 111.i"
-	@echo "... 111.s"
+	@echo "... test.o"
+	@echo "... test.i"
+	@echo "... test.s"
 .PHONY : help
 
 
